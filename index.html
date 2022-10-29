@@ -1,16 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- ce lien est reliee le site awsome et notre projet , nous permet d utilise les icons dand tous le code -->
     <script src="https://kit.fontawesome.com/67fc199a01.js" crossorigin="anonymous"></script>
 
     <title>Open Anchor Company</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"/>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
     crossorigin="anonymous">
+    
     <!-- <style href="/bootstrap-4.0.0-dist/css/bootstrap.min.css"></style> -->
 </head>
 <body>
@@ -20,9 +24,10 @@
     <!-- class = navbar-expand-md ==> rendere la bar de navigation responsive -->
     <!-- md cad pour les screen meduim -->
     <!-- navbar-light pour ajouter lz couleur light au text du navbar --><!-- bg-dark pour la couleur de backgound nav (black)-->
+    
     <nav class="navbar navbar-expand-md navbar-light bg-dark">
         <!-- add logo using fontAwesome -- Anchor code snippet -->
-        <a href="#"><i class="fa-sharp fa-solid fa-anchor text-warning fa-2x mx-3 ps-2"></i></a>
+        <a href="#"><i class="fa-sharp fa-solid fa-anchor text-primary fa-2x mx-3 ps-2"></i></a>
         <!-- text-warnning couleur de logo -->   <!--fa-2x  >> 2x pour deux fois << et fa pour aygmenter la taille-->
         <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
             <span class="navbar-toggler-icon"></span>
@@ -37,16 +42,12 @@
             <ul class="navbar-nav">
                 <!-- class = nav-item ==> set the nav items-->
                 <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">home</a></li><!-- nav-link ==> to style links of the nav -->
-                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">skills</a></li><!-- text-light set color of link light                                                                      -->
-                
-                
-                
-                
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">skills</a></li><!-- text-light set color of link light-->
 
                 <li class="nav-item dropdown">
                     <!-- dropdown ==> container of menu dropdown -->
                     <a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-toggle" 
-                    data-toggle="dropdown" href="#"><strong></strong>projects</a><!-- dropdown-toggle for the triangle aside to projects -->
+                    data-toggle="dropdown" href="#">projects</a><!-- dropdown-toggle for the triangle aside to projects -->
                         <div class="dropdown-menu">
                             <!-- dropdown-menu ==> contein items of menu dd  -->
                             <a class="dropdown-item" href="#">Project 1</a>
@@ -57,14 +58,11 @@
                     </div>
                 </li> 
                 
-
-
-
-                
                 <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">team</a></li>
-                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">contact</a></li>
-            <!--  
-      -->      </ul>
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">contact</a></li>               
+            </ul>
+            <!--  -->  
+            
             <form class="form-inline ml-3x"><!-- form-inline ==> to set button and input side by side -->
                 <div class="input-group"><!-- input-group ==> to group and link button and input -->
                     <input type="text" placeholder="Search" class="form-control"><!-- set radios = form-control -->
@@ -78,9 +76,9 @@
     <!-- end nav -->
 
     <!-- banner -->
-    <section style="background-image:url(images/bg-home.webp) ;">
+    <section >
         <div class="container-fluid">
-            <div class="row bg-info justify-content-center align-items-center" style="height: 100vh;">
+            <div class="row justify-content-center align-items-center" style="height: 100vh;background-image: url(images/bg-home.webp);">
                 <div class="col-sm-10 text-center">
                     <h1 class="display-2 text-warning text-captalize">Open Anchor</h1>
                     <h2 class="font-weight-light text-light font-italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae fugit rem consectetur!  </h2> 
@@ -91,8 +89,6 @@
         </div>
     </section>
     <!-- end banner -->
-</div>
-</section >
 
     <!-- SKILLS -->
     <section class="bg-light p-5">
@@ -104,147 +100,151 @@
             </div>
         </div>
     <!-- end of title -->
-    <div class="row text-center">
-        <div class="col-lg-4 col-sm-10 mx-auto mb-5">
-            <i class="fas fa-desktop text-primary mb-3 fa-5x"></i>
-        <h1 class="text-secondary">Developement</h1>
-        <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, accusantium veniam.</p>
-        <a href="" class="btn btn-outline-warning " >Learn more</a>
-      </div>
-      <div class="col-lg-4 col-sm-10 mx-auto mb-5">
-        <i class="fas fa-edit  text-primary mb-3 fa-5x"></i>
-        <h1 class="text-secondary">Design </h1>
-        <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, accusantium veniam.</p>
-        <a href="" class="btn btn-outline-warning " >Learn more</a>
-      </div>
-      <div class="col-lg-4 col-sm-10 mx-auto mb-5">
-        <i class="fas fa-cogs text-primary mb-3 fa-5x"></i>
-        <h1 class="text-secondary">creativity</h1>
-        <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, accusantium veniam.</p>
-        <a href="" class="btn btn-outline-warning " >Learn more</a>
-      </div>
-     </div>
-    </div>
- </section>
- <!-- end of SKILLS -->
- 
-     <!-- projects -->
-     <section class="p-5 bg-light">
-        <div class="container-fluid">
-          <div class="row mb-4">
-            <div class="col text-center">
-              <h1 class="text-primary display-2">Projects</h1>
-              <p class="lead text-white mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident facilis perferendis saepe minus ad recusandae!</p>
+
+        <div class="row text-center">
+            <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                <i class="fas fa-desktop text-primary mb-3 fa-5x"></i>
+                <h1 class="text-secondary">Developement</h1>
+                <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, accusantium veniam.</p>
+                <a href="" class="btn btn-outline-warning " >Learn more</a>
             </div>
-           </div>
-           <!-- end of title -->
-           <div class="row">
-            <div class="col-lg-3 col-sm-6">
-              <img src="images/index.jpg" class="img-fluid rounded">
-              <h2 class="text-danger my-3">Projet 1 </h2>
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem doloribus iure odit ea est 
-              </p>
-              <button class="btn btn-outline-danger ">savoir plus</button>
+            <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                <i class="fas fa-edit  text-primary mb-3 fa-5x"></i>
+                <h1 class="text-secondary">Design </h1>
+                <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, accusantium veniam.</p>
+                <a href="" class="btn btn-outline-warning " >Learn more</a>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <img src="images/images1.jpg" class="img-fluid rounded">
-              <h2 class="text-danger my-3">Projet 1 </h2>
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem doloribus iure odit ea est 
-              </p>
-              <button class="btn btn-outline-danger ">savoir plus</button>
+            <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                <i class="fas fa-cogs text-primary mb-3 fa-5x"></i>
+                <h1 class="text-secondary">creativity</h1>
+                <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, accusantium veniam.</p>
+                <a href="" class="btn btn-outline-warning " >Learn more</a>
             </div>
-            <div class="col-lg-3 col-sm-6">
-              <img src="images/images1.jpg" class="img-fluid rounded">
-              <h2 class="text-danger my-3">Projet 1 </h2>
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem doloribus iure odit ea est 
-              </p>
-              <button class="btn btn-outline-danger ">savoir plus</button>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <img src="images/index.jpg" class="img-fluid rounded">
-              <h2 class="text-danger my-3">Projet 1 </h2>
-              <p class="text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem doloribus iure odit ea est 
-              </p>
-              <button class="btn btn-outline-danger ">savoir plus</button>
-            </div>
-           </div>
         </div>
-       </section>
-       <!-- end of projects -->
-  
-    <!-- team -->
-    <section class="p-sm-5 p-2 bc-secondary bg-dark">
+    </div>
+    </section>
+    <!-- end of SKILLS -->
+    
+    <!-- projects -->
+    <section class="p-5 bg-dark">
         <div class="container-fluid">
             <div class="row mb-4">
                 <div class="col text-center">
-                    <h1 class="text-warning display-2">Team</h1>
-                    <p class="lead text-white mb-4 text-light">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    </div>
+                    <h1 class="text-primary display-2">Projects</h1>
+                    <p class="lead text-white mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident facilis perferendis saepe minus ad recusandae!</p>
                 </div>
             </div>
-        <!-- end of title -->
-        <div class="row">
-            <div class="col-lg-4 col-sm-10 mx-auto mb-2">
-                <div class="card">
-                    <img src="images/team01.png" class="card-img-top">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h3 class="text-muted">Mehdi</h3>
-                        </div>
-                        <div class="card-subtitle">
-                            <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                        </div>
-                        <div class="text-right">
-                            <a href="#  "><i class="fab fa-facebook fa-2x mx-2 text-primary"></i></a>
-                            <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-info"></i></a>
-                            <a href="#"><i class="fab fa-youtube fa-2x mx-2 text-danger"></i></a>
+            <!-- end of title -->
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <img src="images/projet01.png" class="img-fluid rounded">
+                    <h2 class="text-danger my-3">Projet 1 </h2>
+                    <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem doloribus iure odit ea est 
+                    </p>
+                    <button class="btn btn-outline-danger ">savoir plus</button>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <img src="images/project2.jpeg" class="img-fluid rounded">
+                    <h2 class="text-danger my-3">Projet 2 </h2>
+                    <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem doloribus iure odit ea est 
+                    </p>
+                    <button class="btn btn-outline-danger ">savoir plus</button>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <img src="images/project3.jpeg" class="img-fluid rounded">
+                    <h2 class="text-danger my-3">Projet 3 </h2>
+                    <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem doloribus iure odit ea est 
+                    </p>
+                    <button class="btn btn-outline-danger ">savoir plus</button>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <img src="images/project4.png" class="img-fluid rounded">
+                    <h2 class="text-danger my-3">Projet 4 </h2>
+                    <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem rem doloribus iure odit ea est 
+                    </p>
+                    <button class="btn btn-outline-danger ">savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of projects -->
+    
+    <!-- team -->
+    <section class="p-sm-5 p-2 bc-secondary bg-black">
+        <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col text-center">
+                        <h1 class="text-warning display-2">Team</h1>
+                        <p class="lead text-white mb-4 text-light">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+            
+            <!-- end of title -->
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-10 mx-auto mb-2">
+                    <div class="card">
+                        <img src="images/team01.png" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="text-muted">Mehdi</h3>
+                            </div>
+                            <div class="card-subtitle">
+                                <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="text-right">
+                                <a href="#  "><i class="fab fa-facebook fa-2x mx-2 text-primary"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-info"></i></a>
+                                <a href="#"><i class="fab fa-youtube fa-2x mx-2 text-danger"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
 
 
-            <div class="col-lg-4 col-sm-10 mx-auto mb-2">
-                <div class="card">
-                    <img src="images/team02.2.jpeg" class="card-img-top">
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h3 class="text-muted">Sara</h3>
-                        </div>
-                        <div class="card-subtitle">
-                            <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                        </div>
-                        <div class="text-right">
-                            <a href="#  "><i class="fab fa-facebook fa-2x mx-2 text-primary"></i></a>
-                            <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-info"></i></a>
-                            <a href="#"><i class="fab fa-youtube fa-2x mx-2 text-danger"></i></a>
+                <div class="col-lg-4 col-sm-10 mx-auto mb-2">
+                    <div class="card">
+                        <img src="images/team02.2.jpeg" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="text-muted">Sara</h3>
+                            </div>
+                            <div class="card-subtitle">
+                                <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="text-right">
+                                <a href="#  "><i class="fab fa-facebook fa-2x mx-2 text-primary"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-info"></i></a>
+                                <a href="#"><i class="fab fa-youtube fa-2x mx-2 text-danger"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
 
-            <div class="col-lg-4 col-sm-10 mx-auto mb-2">
-                <div class="card">
-                    <img src="images/team03.jpg" class="card-img-top">  
-                    <div class="card-body">
-                        <div class="card-title">
-                            <h3 class="text-muted">Anas</h3>
-                        </div>
-                        <div class="card-subtitle">
-                            <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-                        </div>
-                        <div class="text-right">
-                            <a href="#  "><i class="fab fa-facebook fa-2x mx-2 text-primary"></i></a>
-                            <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-info"></i></a>
-                            <a href="#"><i class="fab fa-youtube fa-2x mx-2 text-danger"></i></a>
+                <div class="col-lg-4 col-sm-10 mx-auto mb-2">
+                    <div class="card">
+                        <img src="images/team03.jpg" class="card-img-top">  
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="text-muted">Anas</h3>
+                            </div>
+                            <div class="card-subtitle">
+                                <p class="text-muted lead">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                            </div>
+                            <div class="text-right">
+                                <a href="#  "><i class="fab fa-facebook fa-2x mx-2 text-primary"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-2x mx-2 text-info"></i></a>
+                                <a href="#"><i class="fab fa-youtube fa-2x mx-2 text-danger"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,96 +258,97 @@
 
 
 
-    <!-- progression -->
-    <div class="container-fluid bg-black">
-        <!-- title -->
-        <div class="row mb-4">
-            <div class="col text-center">
-                <h1 class="text-warning display-2">Progress</h1>
-                <p class="lead text-white mb-4 text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-            </div>
-        </div>
-        <!-- end of title -->
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-sm-10 text-secondary">
-                <h2>HTML</h2>
-                <div class="progress bg-secondary mb-3">
-                    <div class="progress-bar bg-success" style="width:85%">
-                        85% 
-                    </div>
-                </div>
-                <h2>CSS</h2>
-                <div class="progress bg-secondary mb-3">
-                    <div class="progress-bar bg-danger" style="width:55%">
-                        55% 
-                    </div>
-                </div>
-                <h2>JAVAScript</h2>
-                <div class="progress bg-secondary mb-3">
-                    <div class="progress-bar bg-primary" style="width:20%">
-                        20% 
-                    </div>
-                </div>
-                <h2>JAVA</h2>
-                <div class="progress bg-secondary mb-3">
-                    <div class="progress-bar bg-warning" style="width:40%">
-                        40% 
-                    </div>
+        <!-- progression -->
+    <section> 
+        <div class="container-fluid bg-dark">
+            <!-- title -->
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h1 class="text-warning display-2">Progress</h1>
+                    <p class="lead text-white mb-4 text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                 </div>
             </div>
+            <!-- end of title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-10 text-light">
+                    <h2>HTML</h2>
+                    <div class="progress bg-secondary mb-3">
+                        <div class="progress-bar bg-success" style="width:85%">
+                            85% 
+                        </div>
+                    </div>
+                    <h2>CSS</h2>
+                    <div class="progress bg-secondary mb-3">
+                        <div class="progress-bar bg-danger" style="width:55%">
+                            55% 
+                        </div>
+                    </div>
+                    <h2>JAVAScript</h2>
+                    <div class="progress bg-secondary mb-3">
+                        <div class="progress-bar bg-primary" style="width:20%">
+                            20% 
+                        </div>
+                    </div>
+                    <h2>JAVA</h2>
+                    <div class="progress bg-secondary mb-3">
+                        <div class="progress-bar bg-warning" style="width:40%">
+                            40% 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
     <!-- end progression -->
 
-</div>
-</div>
-</section>
 <!-- end of projects -->
 
 <!-- CONTACT -->
-<section class="p-5 bg-light">
- <div class="container-fluid">
-  <div class="row mb-4">
-    <div class="col text-center">
-      <h1 class="text-primary display-2">Contact</h1>
-      <p class="lead text-secondary mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident facilis perferendis saepe minus ad recusandae!</p>
-    </div>
-   </div>
-   <!-- end of tile -->
-   <div class="row justify-content-center">
-    <div class="col-lg-6 col-md-8 col-sm-10">
-      <div class="text-center text-secondary">
-        <h2>Avez vous des questions ? </h2>
-      </div>
-      <form class="text-muted" >
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name">
+    <section class="p-5 bg-light">
+        <div class="container-fluid">
+            <div class="row mb-4">
+                <div class="col text-center">
+                <h1 class="text-primary display-2">Contact</h1>
+                <p class="lead text-secondary mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident facilis perferendis saepe minus ad recusandae!</p>
+                </div>
+            </div>
+            <!-- end of tile -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                    <div class="text-center text-secondary">
+                        <h2>Avez vous des questions ? </h2>
+                    </div>
+                    <form class="text-muted" >
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">email</label>
+                            <input type="email" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">message</label>
+                            <textarea class="form-control" rows="5" id="message"></textarea>
+                        </div>
+                        <button class="btn btn-success btn-block" type="submit">envoyer</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-          <label for="email">email</label>
-          <input type="email" class="form-control" id="name">
-        </div>
-        <div class="form-group">
-          <label for="message">message</label>
-          <textarea class="form-control" rows="5" id="message"></textarea>
-        </div>
-        <button class="btn btn-success btn-block" type="submit">envoyer</button>
-      </form>
-    </div>
-   </div>
- </div>
-</section>
+    </section>
 <!-- end of CONTACT -->
+
         <!-- footer -->
     <footer class="bg-secondary">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
                     <h1 class="text-white text-capitalize font-weight-light p-3">
-                        <strong>open Anchor Company</strong> 
+                        <strong><span class="text-primary">OPEN</span> <span class="text-warning">Anchor</span>  Company</strong> 
                     </h1>
-                    
                     <h3 class="text-light font-weight-light font-italic mb-3">
                         <em> ipsum dolor sit, amet consectetur adipisicing.</em>
                     </h3>
@@ -357,42 +358,13 @@
                         <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
                         <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
                     </div>
-                    <p class="text-light py-4 m-0 ">&copy;Copyright 2022 - by BLACKSNIPER</p>
+                    <p class="text-light py-4 m-0 ">&copy; Copyright 2022 - by BLACKSNIPER & MADI AFEOISS</p>
                 </div>
             </div>
         </div>
 
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- End of footer -->
-
-
-
 
     <!-- bootstrap code -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
