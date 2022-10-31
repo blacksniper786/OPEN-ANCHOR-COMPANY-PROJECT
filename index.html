@@ -27,7 +27,7 @@
     
     <nav class="navbar navbar-expand-md sticky-top navbar-light bg-dark">
         <!-- add logo using fontAwesome -- Anchor code snippet -->
-        <a href="#"><i class="fa-sharp fa-solid fa-anchor text-primary fa-2x mx-3 ps-2"></i></a>
+        <a href="#open"><i class="fa-sharp fa-solid fa-anchor text-primary fa-2x mx-3 ps-2"></i></a>
         <!-- text-warnning couleur de logo -->   <!--fa-2x  >> 2x pour deux fois << et fa pour aygmenter la taille-->
         <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
             <span class="navbar-toggler-icon"></span>
@@ -41,25 +41,26 @@
 
             <ul class="navbar-nav">
                 <!-- class = nav-item ==> set the nav items-->
-                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">home</a></li><!-- nav-link ==> to style links of the nav -->
-                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">skills</a></li><!-- text-light set color of link light-->
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#home">home</a></li><!-- nav-link ==> to style links of the nav -->
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#skills">skills</a></li><!-- text-light set color of link light-->
 
                 <li class="nav-item dropdown">
                     <!-- dropdown ==> container of menu dropdown -->
-                    <a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-toggle" 
-                    data-toggle="dropdown" href="#">projects</a><!-- dropdown-toggle for the triangle aside to projects -->
+                    <a class="nav-link text-light font-weight-bold text-uppercase px-3 dropdown-toggle" data-ds-toggle="dropdown" href="#projects">
+                        projects
+                    </a><!-- dropdown-toggle for the triangle aside to projects -->
                         <div class="dropdown-menu">
                             <!-- dropdown-menu ==> contein items of menu dd  -->
-                            <a class="dropdown-item" href="#">Project 1</a>
-                            <a class="dropdown-item" href="#">Project 2</a>
-                            <a class="dropdown-item" href="#">Project 3</a>
-                            <a class="dropdown-item" href="#">Project 4</a>
+                            <a class="dropdown-item" href="#pro1">Project 1</a>
+                            <a class="dropdown-item" href="#pro2">Project 2</a>
+                            <a class="dropdown-item" href="#pro3">Project 3</a>
+                            <a class="dropdown-item" href="#pro4">Project 4</a>
                         <!-- dropdown-item ==> les element de de dropdown -->
                     </div>
                 </li> 
                 
-                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">team</a></li>
-                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#">contact</a></li>               
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#team">team</a></li>
+                <li class="nav-item"><a class="nav-link text-light font-weight-bold text-uppercase px-3" href="#contact">contact</a></li>               
             </ul>
             <!--  -->  
             <!-- serach zone & button -->
@@ -80,7 +81,7 @@
 
     <!-- banner -->
     <section >
-        <div class="container-fluid">
+        <div class="container-fluid" id="home">
             <div class="row justify-content-center align-items-center" style="height: 100vh;background-image: url(images/bg-home.webp);">
                 <div class="col-sm-10 text-center">
                     <h1 class="display-2 text-warning text-captalize">Open Anchor</h1>
@@ -94,8 +95,8 @@
     <!-- end banner -->
 
     <!-- SKILLS -->
-    <section class="bg-light p-5">
-    <div class="container-fluid">
+    <section class="bg-light p-5" id="skills">
+    <div class="container-fluid " >
         <div class="row mb-4">
             <div class="col text-center">
                 <h1 class="text-primary display-2">Skills</h1>
@@ -129,8 +130,8 @@
     <!-- end of SKILLS -->
     
     <!-- projects -->
-    <section class="p-5 bg-dark">
-        <div class="container-fluid">
+    <section class="p-5 bg-dark" id="projects">
+        <div class="container-fluid" >
             <div class="row mb-4">
                 <div class="col text-center">
                     <h1 class="text-primary display-2">Projects</h1>
@@ -140,7 +141,7 @@
             <!-- end of title -->
 
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-6 pb-5" id="pro1">
                     <img src="images/projet01.png" class="img-fluid rounded">
                     <h2 class="text-danger my-3">Projet 1 </h2>
                     <p class="text-muted">
@@ -148,7 +149,7 @@
                     </p>
                     <button class="btn btn-outline-danger ">savoir plus</button>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-6 pb-5" id="pro2">
                     <img src="images/project2.jpeg" class="img-fluid rounded">
                     <h2 class="text-danger my-3">Projet 2 </h2>
                     <p class="text-muted">
@@ -156,7 +157,7 @@
                     </p>
                     <button class="btn btn-outline-danger ">savoir plus</button>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-6 pb-5" id="pro3">
                     <img src="images/project3.jpeg" class="img-fluid rounded">
                     <h2 class="text-danger my-3">Projet 3 </h2>
                     <p class="text-muted">
@@ -164,7 +165,7 @@
                     </p>
                     <button class="btn btn-outline-danger ">savoir plus</button>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-3 col-sm-6 pb-5" id="pro4">
                     <img src="images/project4.png" class="img-fluid rounded">
                     <h2 class="text-danger my-3">Projet 4 </h2>
                     <p class="text-muted">
@@ -178,8 +179,8 @@
     <!-- end of projects -->
     
     <!-- team -->
-    <section class="p-sm-5 p-2 bc-secondary bg-black">
-        <div class="container-fluid">
+    <section class="p-sm-5 p-2 bc-secondary bg-black" id="team">
+        <div class="container-fluid" >
                 <div class="row mb-4">
                     <div class="col text-center">
                         <h1 class="text-warning display-2">Team</h1>
@@ -263,7 +264,7 @@
 
         <!-- progression -->
     <section> 
-        <div class="container-fluid bg-dark">
+        <div class="container-fluid bg-dark" >
             <!-- title -->
             <div class="row mb-4">
                 <div class="col text-center">
@@ -272,7 +273,7 @@
                 </div>
             </div>
             <!-- end of title -->
-            <div class="row justify-content-center">
+            <div class="row justify-content-center pb-5">
                 <div class="col-lg-6 col-sm-10 text-light">
                     <h2>HTML</h2>
                     <div class="progress bg-secondary mb-3">
@@ -306,8 +307,8 @@
     <!-- end progression -->
 
 <!-- CONTACT -->
-    <section class="p-5 bg-light">
-        <div class="container-fluid">
+    <section class="p-5 bg-light" id="contact">
+        <div class="container-fluid" >
             <div class="row mb-4">
                 <div class="col text-center">
                 <h1 class="text-primary display-2">Contact</h1>
@@ -343,11 +344,11 @@
 <!-- end of CONTACT -->
 
         <!-- footer -->
-    <footer class="bg-secondary">
+    <footer class="bg-secondary" id="open">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h1 class="text-white text-capitalize font-weight-light p-3">
+                    <h1 class="text-white text-capitalize font-weight-light p-3" >
                         <strong><span class="text-primary">OPEN</span> <span class="text-warning">Anchor</span>  Company</strong> 
                     </h1>
                     <h3 class="text-light font-weight-light font-italic mb-3">
